@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace CruceLlamadas
 {
-    class Linea
+    class Resultado
     {
-        private String numeroTelefono;
-        private String titular;
-        private Operador operador;
-        private String archivo;
-
+        private List<ItemResultado> detalle;
     }
 }
