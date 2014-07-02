@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.grdResultados = new System.Windows.Forms.DataGridView();
             this.Orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TelefonoOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TelefonoDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaHoraLlamado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAnalizar = new System.Windows.Forms.Button();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.grpOrigen = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,26 +42,40 @@
             this.cmbOperadorOrigen = new System.Windows.Forms.ComboBox();
             this.txtTitularOrigen = new System.Windows.Forms.TextBox();
             this.txtTelefonoOrigen = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cmbOperadorDestino = new System.Windows.Forms.ComboBox();
+            this.txtTitularDestino = new System.Windows.Forms.TextBox();
+            this.txtTelefonoDestino = new System.Windows.Forms.TextBox();
+            this.grpInfo = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.grdResultados)).BeginInit();
             this.grpOrigen.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.grpInfo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // grdResultados
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grdResultados.AllowUserToAddRows = false;
+            this.grdResultados.AllowUserToDeleteRows = false;
+            this.grdResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grdResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Orden,
             this.TelefonoOrigen,
             this.TelefonoDestino,
             this.FechaHoraLlamado,
             this.Duracion});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 304);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(842, 204);
-            this.dataGridView1.TabIndex = 0;
+            this.grdResultados.Location = new System.Drawing.Point(12, 326);
+            this.grdResultados.Name = "grdResultados";
+            this.grdResultados.ReadOnly = true;
+            this.grdResultados.Size = new System.Drawing.Size(842, 182);
+            this.grdResultados.TabIndex = 0;
             // 
             // Orden
             // 
@@ -108,45 +118,12 @@
             // 
             // btnAnalizar
             // 
-            this.btnAnalizar.Location = new System.Drawing.Point(369, 253);
+            this.btnAnalizar.Location = new System.Drawing.Point(369, 274);
             this.btnAnalizar.Name = "btnAnalizar";
             this.btnAnalizar.Size = new System.Drawing.Size(128, 34);
             this.btnAnalizar.TabIndex = 1;
             this.btnAnalizar.Text = "&Analizar";
             this.btnAnalizar.UseVisualStyleBackColor = true;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(62, 13);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(354, 20);
-            this.txtNombre.TabIndex = 3;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Location = new System.Drawing.Point(504, 16);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(350, 61);
-            this.txtDescripcion.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Nombre:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(432, 19);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Descripcion:";
             // 
             // grpOrigen
             // 
@@ -157,9 +134,10 @@
             this.grpOrigen.Controls.Add(this.txtTitularOrigen);
             this.grpOrigen.Controls.Add(this.txtTelefonoOrigen);
             this.grpOrigen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.grpOrigen.Location = new System.Drawing.Point(12, 95);
+            this.grpOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpOrigen.Location = new System.Drawing.Point(12, 107);
             this.grpOrigen.Name = "grpOrigen";
-            this.grpOrigen.Size = new System.Drawing.Size(421, 141);
+            this.grpOrigen.Size = new System.Drawing.Size(415, 150);
             this.grpOrigen.TabIndex = 13;
             this.grpOrigen.TabStop = false;
             this.grpOrigen.Text = "Origen";
@@ -213,18 +191,128 @@
             this.txtTelefonoOrigen.Size = new System.Drawing.Size(199, 20);
             this.txtTelefonoOrigen.TabIndex = 13;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.cmbOperadorDestino);
+            this.groupBox1.Controls.Add(this.txtTitularDestino);
+            this.groupBox1.Controls.Add(this.txtTelefonoDestino);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(439, 107);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(415, 150);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Destino";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 87);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Operador:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 60);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Titular:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 33);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Nro. Telefonico:";
+            // 
+            // cmbOperadorDestino
+            // 
+            this.cmbOperadorDestino.FormattingEnabled = true;
+            this.cmbOperadorDestino.Location = new System.Drawing.Point(105, 87);
+            this.cmbOperadorDestino.Name = "cmbOperadorDestino";
+            this.cmbOperadorDestino.Size = new System.Drawing.Size(169, 21);
+            this.cmbOperadorDestino.TabIndex = 15;
+            // 
+            // txtTitularDestino
+            // 
+            this.txtTitularDestino.Location = new System.Drawing.Point(105, 60);
+            this.txtTitularDestino.Name = "txtTitularDestino";
+            this.txtTitularDestino.Size = new System.Drawing.Size(253, 20);
+            this.txtTitularDestino.TabIndex = 14;
+            // 
+            // txtTelefonoDestino
+            // 
+            this.txtTelefonoDestino.Location = new System.Drawing.Point(105, 33);
+            this.txtTelefonoDestino.Name = "txtTelefonoDestino";
+            this.txtTelefonoDestino.Size = new System.Drawing.Size(199, 20);
+            this.txtTelefonoDestino.TabIndex = 13;
+            // 
+            // grpInfo
+            // 
+            this.grpInfo.Controls.Add(this.label2);
+            this.grpInfo.Controls.Add(this.label1);
+            this.grpInfo.Controls.Add(this.txtDescripcion);
+            this.grpInfo.Controls.Add(this.txtNombre);
+            this.grpInfo.Location = new System.Drawing.Point(12, 12);
+            this.grpInfo.Name = "grpInfo";
+            this.grpInfo.Size = new System.Drawing.Size(842, 89);
+            this.grpInfo.TabIndex = 15;
+            this.grpInfo.TabStop = false;
+            this.grpInfo.Text = "Informacion";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(437, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Descripcion:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Nombre:";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Location = new System.Drawing.Point(509, 21);
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(319, 50);
+            this.txtDescripcion.TabIndex = 8;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(59, 21);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(321, 20);
+            this.txtNombre.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(866, 520);
+            this.Controls.Add(this.grpInfo);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grpOrigen);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnAnalizar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.grdResultados);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -232,11 +320,14 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdResultados)).EndInit();
             this.grpOrigen.ResumeLayout(false);
             this.grpOrigen.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.grpInfo.ResumeLayout(false);
+            this.grpInfo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -247,17 +338,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView grdResultados;
         private System.Windows.Forms.Button btnAnalizar;
         private System.Windows.Forms.DataGridViewTextBoxColumn Orden;
         private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoOrigen;
         private System.Windows.Forms.DataGridViewTextBoxColumn TelefonoDestino;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaHoraLlamado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grpOrigen;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -265,6 +352,18 @@
         private System.Windows.Forms.ComboBox cmbOperadorOrigen;
         private System.Windows.Forms.TextBox txtTitularOrigen;
         private System.Windows.Forms.TextBox txtTelefonoOrigen;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cmbOperadorDestino;
+        private System.Windows.Forms.TextBox txtTitularDestino;
+        private System.Windows.Forms.TextBox txtTelefonoDestino;
+        private System.Windows.Forms.GroupBox grpInfo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtNombre;
     }
 }
 
