@@ -80,6 +80,10 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btnVerDestino = new System.Windows.Forms.Button();
+            this.btnVerOrigen = new System.Windows.Forms.Button();
             this.tabCruceLlamadas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpInfo.SuspendLayout();
@@ -124,6 +128,8 @@
             // 
             // grpInfo
             // 
+            this.grpInfo.Controls.Add(this.label10);
+            this.grpInfo.Controls.Add(this.dtpFecha);
             this.grpInfo.Controls.Add(this.label2);
             this.grpInfo.Controls.Add(this.label1);
             this.grpInfo.Controls.Add(this.txtDescripcion);
@@ -170,6 +176,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnVerDestino);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
@@ -236,6 +243,7 @@
             // 
             // grpOrigen
             // 
+            this.grpOrigen.Controls.Add(this.btnVerOrigen);
             this.grpOrigen.Controls.Add(this.label5);
             this.grpOrigen.Controls.Add(this.label4);
             this.grpOrigen.Controls.Add(this.label3);
@@ -308,6 +316,7 @@
             this.btnAnalizar.TabIndex = 17;
             this.btnAnalizar.Text = "&ANALIZAR";
             this.btnAnalizar.UseVisualStyleBackColor = true;
+            this.btnAnalizar.Click += new System.EventHandler(this.btnAnalizar_Click_1);
             // 
             // tabPage2
             // 
@@ -601,6 +610,43 @@
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.Width = 200;
             // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(578, 40);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(103, 20);
+            this.dtpFecha.TabIndex = 11;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(532, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Fecha:";
+            // 
+            // btnVerDestino
+            // 
+            this.btnVerDestino.Location = new System.Drawing.Point(170, 127);
+            this.btnVerDestino.Name = "btnVerDestino";
+            this.btnVerDestino.Size = new System.Drawing.Size(75, 23);
+            this.btnVerDestino.TabIndex = 19;
+            this.btnVerDestino.Text = "Ver";
+            this.btnVerDestino.UseVisualStyleBackColor = true;
+            this.btnVerDestino.Click += new System.EventHandler(this.btnVerDestino_Click);
+            // 
+            // btnVerOrigen
+            // 
+            this.btnVerOrigen.Location = new System.Drawing.Point(170, 127);
+            this.btnVerOrigen.Name = "btnVerOrigen";
+            this.btnVerOrigen.Size = new System.Drawing.Size(75, 23);
+            this.btnVerOrigen.TabIndex = 20;
+            this.btnVerOrigen.Text = "Ver";
+            this.btnVerOrigen.UseVisualStyleBackColor = true;
+            this.btnVerOrigen.Click += new System.EventHandler(this.btnVerOrigen_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -695,6 +741,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Button btnVerDestino;
+        private System.Windows.Forms.Button btnVerOrigen;
 
     }
 }

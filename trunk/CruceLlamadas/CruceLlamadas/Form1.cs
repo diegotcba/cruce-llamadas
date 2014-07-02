@@ -16,5 +16,20 @@ namespace CruceLlamadas
         {
             InitializeComponent();
         }
+
+        private void btnVerOrigen_Click(object sender, EventArgs e)
+        {
+            tabCruceLlamadas.SelectTab(1);
+        }
+
+        private void btnVerDestino_Click(object sender, EventArgs e)
+        {
+            tabCruceLlamadas.SelectTab(2);
+        }
+
+        private void btnAnalizar_Click_1(object sender, EventArgs e)
+        {
+            tabCruceLlamadas.SelectTab(3);
+        }
     }
 }
