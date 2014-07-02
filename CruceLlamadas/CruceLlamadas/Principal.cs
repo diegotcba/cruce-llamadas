@@ -12,7 +12,7 @@ namespace CruceLlamadas
 {
     public partial class Principal : Form
     {
-        private int childFormNumber = 0;
+        private int childFormNumber = 1;
 
         public Principal()
         {
@@ -21,9 +21,9 @@ namespace CruceLlamadas
 
         private void ShowNewForm(object sender, EventArgs e)
         {
-            Form childForm = new Form();
+            Form childForm = new Form1();
             childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
+            childForm.Text = "CruceLlamada sin titulo " + childFormNumber++;
             childForm.Show();
         }
 
