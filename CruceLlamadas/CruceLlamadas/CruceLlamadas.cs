@@ -12,6 +12,8 @@ namespace CruceLlamadas
         private String titulo;
         private String descripcion;
 
-
+        private Linea origen;
+        private Linea destino;
+        private Resultado resultado;
     }
 }
