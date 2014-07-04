@@ -8,10 +8,10 @@ namespace CruceLlamadas
 {
     class Linea
     {
-        private String numeroTelefono;
-        private String titular;
-        private Operador operador;
-        private String archivo;
+        private String NumeroTelefono { get; set; }
+        private String Titular { get; set; }
+        private Operador Operador { get; set; }
+        private String Archivo { get; set; }
 
     }
 }
