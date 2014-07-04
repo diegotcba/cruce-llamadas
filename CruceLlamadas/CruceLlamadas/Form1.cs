@@ -31,5 +31,29 @@ namespace CruceLlamadas
         {
             tabCruceLlamadas.SelectTab(3);
         }
+
+        private void btnArchivoOrigen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                string FileName = openFileDialog.FileName;
+                txtArchivoOrigen.Text = FileName;
+           }
+        }
+
+        private void btnArchivoDestino_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
+            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+            {
+                string FileName = openFileDialog.FileName;
+                txtArchivoDestino.Text = FileName;
+            }
+        }
     }
 }

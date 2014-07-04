@@ -8,13 +8,13 @@ namespace CruceLlamadas
 {
     class CruceLlamadas
     {
-        private DateTime Fecha { get; set; }
-        private String Titulo { get; set; }
-        private String Descripcion { get; set; }
+        public DateTime Fecha { get; set; }
+        public String Titulo { get; set; }
+        public String Descripcion { get; set; }
 
-        private Linea Origen { get; set; }
-        private Linea Destino { get; set; }
-        private Resultado Resultado { get; set; }
+        public Linea Origen { get; set; }
+        public Linea Destino { get; set; }
+        public Resultado Resultado { get; set; }
 
     }
 }

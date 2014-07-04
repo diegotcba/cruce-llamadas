@@ -8,7 +8,7 @@ namespace CruceLlamadas
 {
     class Operador
     {
-        private int id;
-        private String nombre;
+        public int id { get; set; }
+        public String nombre { get; set; }
     }
 }
