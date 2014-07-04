@@ -31,11 +31,14 @@
             this.tabCruceLlamadas = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.grpInfo = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnVerDestino = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -43,6 +46,7 @@
             this.txtTitularDestino = new System.Windows.Forms.TextBox();
             this.txtTelefonoDestino = new System.Windows.Forms.TextBox();
             this.grpOrigen = new System.Windows.Forms.GroupBox();
+            this.btnVerOrigen = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,38 +56,36 @@
             this.btnAnalizar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grdListadoOrigen = new System.Windows.Forms.DataGridView();
+            this.OrdenOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NroTelefonoOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaHoraOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DuracionOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpListadoOrigen = new System.Windows.Forms.GroupBox();
             this.lblDatosOrigen = new System.Windows.Forms.Label();
             this.btnCargarOrigen = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txtArchivoOrigen = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblDatosDestino = new System.Windows.Forms.Label();
+            this.btnCargarDestino = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtArchivoDestino = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.grdResultados = new System.Windows.Forms.DataGridView();
             this.Orden = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TelefonoOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TelefonoDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaHoraLlamado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblDatosDestino = new System.Windows.Forms.Label();
-            this.btnCargarDestino = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtArchivoDestino = new System.Windows.Forms.TextBox();
-            this.OrdenOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NroTelefonoOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaHoraOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DuracionOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.btnVerDestino = new System.Windows.Forms.Button();
-            this.btnVerOrigen = new System.Windows.Forms.Button();
+            this.btnArchivoOrigen = new System.Windows.Forms.Button();
+            this.btnArchivoDestino = new System.Windows.Forms.Button();
             this.tabCruceLlamadas.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpInfo.SuspendLayout();
@@ -93,10 +95,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.grdListadoOrigen)).BeginInit();
             this.grpListadoOrigen.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdResultados)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabCruceLlamadas
@@ -140,6 +142,23 @@
             this.grpInfo.TabIndex = 20;
             this.grpInfo.TabStop = false;
             this.grpInfo.Text = "Informacion";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(532, 40);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 13);
+            this.label10.TabIndex = 12;
+            this.label10.Text = "Fecha:";
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(578, 40);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(103, 20);
+            this.dtpFecha.TabIndex = 11;
             // 
             // label2
             // 
@@ -191,6 +210,16 @@
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Destino";
+            // 
+            // btnVerDestino
+            // 
+            this.btnVerDestino.Location = new System.Drawing.Point(170, 127);
+            this.btnVerDestino.Name = "btnVerDestino";
+            this.btnVerDestino.Size = new System.Drawing.Size(75, 23);
+            this.btnVerDestino.TabIndex = 19;
+            this.btnVerDestino.Text = "Ver";
+            this.btnVerDestino.UseVisualStyleBackColor = true;
+            this.btnVerDestino.Click += new System.EventHandler(this.btnVerDestino_Click);
             // 
             // label6
             // 
@@ -258,6 +287,16 @@
             this.grpOrigen.TabIndex = 18;
             this.grpOrigen.TabStop = false;
             this.grpOrigen.Text = "Origen";
+            // 
+            // btnVerOrigen
+            // 
+            this.btnVerOrigen.Location = new System.Drawing.Point(170, 127);
+            this.btnVerOrigen.Name = "btnVerOrigen";
+            this.btnVerOrigen.Size = new System.Drawing.Size(75, 23);
+            this.btnVerOrigen.TabIndex = 20;
+            this.btnVerOrigen.Text = "Ver";
+            this.btnVerOrigen.UseVisualStyleBackColor = true;
+            this.btnVerOrigen.Click += new System.EventHandler(this.btnVerOrigen_Click);
             // 
             // label5
             // 
@@ -346,8 +385,41 @@
             this.grdListadoOrigen.Size = new System.Drawing.Size(849, 365);
             this.grdListadoOrigen.TabIndex = 1;
             // 
+            // OrdenOrigen
+            // 
+            this.OrdenOrigen.HeaderText = "Orden";
+            this.OrdenOrigen.MinimumWidth = 50;
+            this.OrdenOrigen.Name = "OrdenOrigen";
+            this.OrdenOrigen.ReadOnly = true;
+            this.OrdenOrigen.Width = 50;
+            // 
+            // NroTelefonoOrigen
+            // 
+            this.NroTelefonoOrigen.HeaderText = "Telefono";
+            this.NroTelefonoOrigen.MinimumWidth = 250;
+            this.NroTelefonoOrigen.Name = "NroTelefonoOrigen";
+            this.NroTelefonoOrigen.ReadOnly = true;
+            this.NroTelefonoOrigen.Width = 250;
+            // 
+            // FechaHoraOrigen
+            // 
+            this.FechaHoraOrigen.HeaderText = "Fecha/Hora";
+            this.FechaHoraOrigen.MinimumWidth = 150;
+            this.FechaHoraOrigen.Name = "FechaHoraOrigen";
+            this.FechaHoraOrigen.ReadOnly = true;
+            this.FechaHoraOrigen.Width = 150;
+            // 
+            // DuracionOrigen
+            // 
+            this.DuracionOrigen.HeaderText = "Duracion";
+            this.DuracionOrigen.MinimumWidth = 200;
+            this.DuracionOrigen.Name = "DuracionOrigen";
+            this.DuracionOrigen.ReadOnly = true;
+            this.DuracionOrigen.Width = 200;
+            // 
             // grpListadoOrigen
             // 
+            this.grpListadoOrigen.Controls.Add(this.btnArchivoOrigen);
             this.grpListadoOrigen.Controls.Add(this.lblDatosOrigen);
             this.grpListadoOrigen.Controls.Add(this.btnCargarOrigen);
             this.grpListadoOrigen.Controls.Add(this.label9);
@@ -406,6 +478,103 @@
             this.tabPage3.Text = "Destino";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4});
+            this.dataGridView1.Location = new System.Drawing.Point(7, 138);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(849, 365);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Orden";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 50;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 50;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Telefono";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 250;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Fecha/Hora";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 150;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Duracion";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 200;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 200;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnArchivoDestino);
+            this.groupBox2.Controls.Add(this.lblDatosDestino);
+            this.groupBox2.Controls.Add(this.btnCargarDestino);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.txtArchivoDestino);
+            this.groupBox2.Location = new System.Drawing.Point(7, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(849, 126);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            // 
+            // lblDatosDestino
+            // 
+            this.lblDatosDestino.AutoSize = true;
+            this.lblDatosDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatosDestino.Location = new System.Drawing.Point(7, 20);
+            this.lblDatosDestino.Name = "lblDatosDestino";
+            this.lblDatosDestino.Size = new System.Drawing.Size(157, 13);
+            this.lblDatosDestino.TabIndex = 3;
+            this.lblDatosDestino.Text = "Todos los datos del origen";
+            // 
+            // btnCargarDestino
+            // 
+            this.btnCargarDestino.Location = new System.Drawing.Point(696, 51);
+            this.btnCargarDestino.Name = "btnCargarDestino";
+            this.btnCargarDestino.Size = new System.Drawing.Size(75, 23);
+            this.btnCargarDestino.TabIndex = 2;
+            this.btnCargarDestino.Text = "Cargar";
+            this.btnCargarDestino.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 81);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(46, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Archivo:";
+            // 
+            // txtArchivoDestino
+            // 
+            this.txtArchivoDestino.Enabled = false;
+            this.txtArchivoDestino.Location = new System.Drawing.Point(59, 81);
+            this.txtArchivoDestino.Name = "txtArchivoDestino";
+            this.txtArchivoDestino.Size = new System.Drawing.Size(478, 20);
+            this.txtArchivoDestino.TabIndex = 0;
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.groupBox3);
@@ -417,6 +586,14 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Resultados";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(7, 7);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(849, 151);
+            this.groupBox3.TabIndex = 18;
+            this.groupBox3.TabStop = false;
             // 
             // grdResultados
             // 
@@ -474,178 +651,25 @@
             this.Duracion.Name = "Duracion";
             this.Duracion.ReadOnly = true;
             // 
-            // groupBox2
+            // btnArchivoOrigen
             // 
-            this.groupBox2.Controls.Add(this.lblDatosDestino);
-            this.groupBox2.Controls.Add(this.btnCargarDestino);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.txtArchivoDestino);
-            this.groupBox2.Location = new System.Drawing.Point(7, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(849, 126);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
+            this.btnArchivoOrigen.Location = new System.Drawing.Point(544, 81);
+            this.btnArchivoOrigen.Name = "btnArchivoOrigen";
+            this.btnArchivoOrigen.Size = new System.Drawing.Size(75, 23);
+            this.btnArchivoOrigen.TabIndex = 4;
+            this.btnArchivoOrigen.Text = "...";
+            this.btnArchivoOrigen.UseVisualStyleBackColor = true;
+            this.btnArchivoOrigen.Click += new System.EventHandler(this.btnArchivoOrigen_Click);
             // 
-            // lblDatosDestino
+            // btnArchivoDestino
             // 
-            this.lblDatosDestino.AutoSize = true;
-            this.lblDatosDestino.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatosDestino.Location = new System.Drawing.Point(7, 20);
-            this.lblDatosDestino.Name = "lblDatosDestino";
-            this.lblDatosDestino.Size = new System.Drawing.Size(157, 13);
-            this.lblDatosDestino.TabIndex = 3;
-            this.lblDatosDestino.Text = "Todos los datos del origen";
-            // 
-            // btnCargarDestino
-            // 
-            this.btnCargarDestino.Location = new System.Drawing.Point(696, 51);
-            this.btnCargarDestino.Name = "btnCargarDestino";
-            this.btnCargarDestino.Size = new System.Drawing.Size(75, 23);
-            this.btnCargarDestino.TabIndex = 2;
-            this.btnCargarDestino.Text = "Cargar";
-            this.btnCargarDestino.UseVisualStyleBackColor = true;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 81);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(46, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Archivo:";
-            // 
-            // txtArchivoDestino
-            // 
-            this.txtArchivoDestino.Enabled = false;
-            this.txtArchivoDestino.Location = new System.Drawing.Point(59, 81);
-            this.txtArchivoDestino.Name = "txtArchivoDestino";
-            this.txtArchivoDestino.Size = new System.Drawing.Size(478, 20);
-            this.txtArchivoDestino.TabIndex = 0;
-            // 
-            // OrdenOrigen
-            // 
-            this.OrdenOrigen.HeaderText = "Orden";
-            this.OrdenOrigen.MinimumWidth = 50;
-            this.OrdenOrigen.Name = "OrdenOrigen";
-            this.OrdenOrigen.ReadOnly = true;
-            this.OrdenOrigen.Width = 50;
-            // 
-            // NroTelefonoOrigen
-            // 
-            this.NroTelefonoOrigen.HeaderText = "Telefono";
-            this.NroTelefonoOrigen.MinimumWidth = 250;
-            this.NroTelefonoOrigen.Name = "NroTelefonoOrigen";
-            this.NroTelefonoOrigen.ReadOnly = true;
-            this.NroTelefonoOrigen.Width = 250;
-            // 
-            // FechaHoraOrigen
-            // 
-            this.FechaHoraOrigen.HeaderText = "Fecha/Hora";
-            this.FechaHoraOrigen.MinimumWidth = 150;
-            this.FechaHoraOrigen.Name = "FechaHoraOrigen";
-            this.FechaHoraOrigen.ReadOnly = true;
-            this.FechaHoraOrigen.Width = 150;
-            // 
-            // DuracionOrigen
-            // 
-            this.DuracionOrigen.HeaderText = "Duracion";
-            this.DuracionOrigen.MinimumWidth = 200;
-            this.DuracionOrigen.Name = "DuracionOrigen";
-            this.DuracionOrigen.ReadOnly = true;
-            this.DuracionOrigen.Width = 200;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Location = new System.Drawing.Point(7, 7);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(849, 151);
-            this.groupBox3.TabIndex = 18;
-            this.groupBox3.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4});
-            this.dataGridView1.Location = new System.Drawing.Point(7, 138);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(849, 365);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.HeaderText = "Orden";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 50;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 50;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Telefono";
-            this.dataGridViewTextBoxColumn2.MinimumWidth = 250;
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            this.dataGridViewTextBoxColumn2.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Fecha/Hora";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 150;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Duracion";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 200;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 200;
-            // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(578, 40);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(103, 20);
-            this.dtpFecha.TabIndex = 11;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(532, 40);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(40, 13);
-            this.label10.TabIndex = 12;
-            this.label10.Text = "Fecha:";
-            // 
-            // btnVerDestino
-            // 
-            this.btnVerDestino.Location = new System.Drawing.Point(170, 127);
-            this.btnVerDestino.Name = "btnVerDestino";
-            this.btnVerDestino.Size = new System.Drawing.Size(75, 23);
-            this.btnVerDestino.TabIndex = 19;
-            this.btnVerDestino.Text = "Ver";
-            this.btnVerDestino.UseVisualStyleBackColor = true;
-            this.btnVerDestino.Click += new System.EventHandler(this.btnVerDestino_Click);
-            // 
-            // btnVerOrigen
-            // 
-            this.btnVerOrigen.Location = new System.Drawing.Point(170, 127);
-            this.btnVerOrigen.Name = "btnVerOrigen";
-            this.btnVerOrigen.Size = new System.Drawing.Size(75, 23);
-            this.btnVerOrigen.TabIndex = 20;
-            this.btnVerOrigen.Text = "Ver";
-            this.btnVerOrigen.UseVisualStyleBackColor = true;
-            this.btnVerOrigen.Click += new System.EventHandler(this.btnVerOrigen_Click);
+            this.btnArchivoDestino.Location = new System.Drawing.Point(543, 81);
+            this.btnArchivoDestino.Name = "btnArchivoDestino";
+            this.btnArchivoDestino.Size = new System.Drawing.Size(75, 23);
+            this.btnArchivoDestino.TabIndex = 5;
+            this.btnArchivoDestino.Text = "...";
+            this.btnArchivoDestino.UseVisualStyleBackColor = true;
+            this.btnArchivoDestino.Click += new System.EventHandler(this.btnArchivoDestino_Click);
             // 
             // Form1
             // 
@@ -673,11 +697,11 @@
             this.grpListadoOrigen.ResumeLayout(false);
             this.grpListadoOrigen.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grdResultados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grdResultados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -745,6 +769,8 @@
         private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Button btnVerDestino;
         private System.Windows.Forms.Button btnVerOrigen;
+        private System.Windows.Forms.Button btnArchivoOrigen;
+        private System.Windows.Forms.Button btnArchivoDestino;
 
     }
 }

@@ -8,6 +8,13 @@ namespace CruceLlamadas
 {
     class Resultado
     {
-        private List<ItemResultado> detalle;
+        public List<ItemResultado> Detalle { get; set; }
+
+
+        public void ordenarPorFecha()
+        {
+            this.Detalle = this.Detalle.OrderBy(s => s.fechahora).ToList();
+        }
     }
+
 }
